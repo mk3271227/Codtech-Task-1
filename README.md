@@ -486,13 +486,78 @@ module test_my2to1mux;
     end
 endmodule
 
+Name:MUSKAN KUMARI
+<br>
+Company:CODTECH IT SOLUTIONS
+<br>
+ID:CT4VLSI2707
+<br>
+Domain:VLSI
+<br>
+Duration:June to July 2024
+<br>
+Mentor:SRAVANI GOUNI
+<br>
+
+Project Overview:
+<br>
+
+Objective:
+<br>
+Design, implement, and simulate fundamental digital circuits using Verilog HDL and ModelSim software, demonstrating a thorough understanding of digital logic design principles.
+<br>
+Key Activities:
+<br>
+
+- Mastering Verilog HDL: Grasp the syntax and semantics of Verilog, including modules, ports, wires, and registers.<br>
+
+- Implementing Logic Gates: Design and develop various basic logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR) using Verilog.<br>
+
+- Designing Combinational Circuits: Build more complex circuits using basic gates, including half adders, full adders, and multiplexers.<br>
+
+- Creating Testbenches: Develop testbenches for each logic gate and combinational circuit, applying various input combinations to verify correct functionality.<br>
+
+- Simulation and Verification: Compile Verilog code, run simulations in ModelSim, and analyze waveforms to ensure circuit functionality.<br>
+
+- Debugging and Validation: Identify and fix errors, verifying circuit correctness through simulation and comparison with expected results.<br>
+
+Project Components:<br>
+
+- Logic Gate Modules: Implement each gate as a separate Verilog module (e.g., my_and_gate, my_or_gate, etc.).<br>
+
+- Combinational Circuit Modules: Implement more complex circuits using multiple logic gates (e.g., my_half_adder, my_full_adder, etc.).<br>
+
+- Testbenches: Develop testbenches for each module, applying various input combinations and checking outputs.<br>
+
+Skills and Tools Used:<br>
+
+- Verilog HDL: Write efficient and syntactically correct Verilog code, demonstrating an understanding of digital logic design principles.<br>
+
+- ModelSim: Compile and simulate Verilog code, using waveform viewers to analyze circuit behavior.<br>
+
+- Debugging and Verification: Identify and fix errors, verifying circuit correctness through simulation and comparison with expected results.<br>
+
+Project Summary:<br>
+This project demonstrates the ability to design and implement digital logic circuits using Verilog HDL, validating designs through simulation in ModelSim. Hands-on experience is gained through writing testbenches and analyzing waveforms, developing a solid foundation in digital design and simulation. The importance of verification and debugging in the design process is highlighted, ensuring final circuits perform as intended.<br>
+
+
+
 ![verilog01](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/9c393887-dd5b-4997-ae98-0953cb7c02aa)
+
 ![verilog1](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/165e6cb6-21dc-40fd-9994-b496537afafd)
+
 ![verilog02](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/cb38e3a4-90bc-4168-a415-27ab4d63edfc)
+
 ![verilog2](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/655012e5-c788-4f36-8e21-ed32130b80da)
+
 ![verilog03](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/3c4fc9a8-1ccd-422f-8717-3c96aa256250)
+
 ![verilog3](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/c30b7f09-fc0b-44fb-84fd-25504c334585)
+
 ![verilog4](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/3eaf9781-6643-4e81-a1c1-66c7e369f21f)
+
 ![verilog5](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/fb3651ee-4647-48cf-98e1-9930877c83f2)
+
 ![verilog6](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/2db884f8-04ff-4b7b-ad54-f64bbbb752ae)
+
 ![verilog7](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/8e85de24-59dd-4f17-9e47-2db0686c9132)
