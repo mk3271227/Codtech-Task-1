@@ -485,3 +485,14 @@ module test_my2to1mux;
         $finish;
     end
 endmodule
+
+![verilog01](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/9c393887-dd5b-4997-ae98-0953cb7c02aa)
+![verilog1](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/165e6cb6-21dc-40fd-9994-b496537afafd)
+![verilog02](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/cb38e3a4-90bc-4168-a415-27ab4d63edfc)
+![verilog2](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/655012e5-c788-4f36-8e21-ed32130b80da)
+![verilog03](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/3c4fc9a8-1ccd-422f-8717-3c96aa256250)
+![verilog3](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/c30b7f09-fc0b-44fb-84fd-25504c334585)
+![verilog4](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/3eaf9781-6643-4e81-a1c1-66c7e369f21f)
+![verilog5](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/fb3651ee-4647-48cf-98e1-9930877c83f2)
+![verilog6](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/2db884f8-04ff-4b7b-ad54-f64bbbb752ae)
+![verilog7](https://github.com/mk3271227/Codtech-Task-1/assets/175197452/8e85de24-59dd-4f17-9e47-2db0686c9132)
