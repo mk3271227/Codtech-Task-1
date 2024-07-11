@@ -38,41 +38,41 @@ ________________________________________________________________________________
 // VERILOG CODE AND TESTBENCH  FOR AND GATE //
 
 
-module myandgate (
-input A,
-input B,
-output Y
-);
-assign Y = A & B;
-endmodule
-////////////// TESTBENCH /////////////////
-module test_myandgate;
-reg A;
-reg B;
-wire Y;
-// Instantiate the AND gate
-myandgate uut (
-.A(A),
-.B(B),
-.Y(Y)
-);
-initial begin
-// Display the header for the waveform 
-output
-$display("A B | Y");
-$display("------");
-// Apply test vectors
-A = 0; B = 0; #10;
-$display("%b %b | %b", A, B, Y);
-A = 0; B = 1; #10;
-$display("%b %b | %b", A, B, Y);
-A = 1; B = 0; #10;
-$display("%b %b | %b", A, B, Y);
-A = 1; B = 1; #10;
-$display("%b %b | %b", A, B, Y);
-$finish;
-end
-endmodule
+module myandgate (<br>
+input A,<br>
+input B,<br>
+output Y<br>
+);<br>
+assign Y = A & B;<br>
+endmodule<br>
+////////////// TESTBENCH /////////////////<br>
+module test_myandgate;<br>
+reg A;<br>
+reg B;<br>
+wire Y;<br>
+// Instantiate the AND gate<br>
+myandgate uut (<br>
+.A(A),<br>
+.B(B),<br>
+.Y(Y)<br>
+);<br>
+initial begin<br>
+// Display the header for the waveform <br>
+output<br>
+$display("A B | Y");<br>
+$display("------");<br>
+// Apply test vectors<br>
+A = 0; B = 0; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 0; B = 1; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 1; B = 0; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 1; B = 1; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+$finish;<br>
+end<br>
+endmodule<br>
 
 ______________________________________________________________________________________________________________
 
@@ -234,22 +234,22 @@ myxorgate uut (<br>
 .Y(Y)<br>
 );<br>
 initial begin<br>
-// Display the header for the waveform 
-output
-$display("A B | Y");
-$display("------");
-// Apply test vectors
-A = 0; B = 0; #10;
-$display("%b %b | %b", A, B, Y);
-A = 0; B = 1; #10;
-$display("%b %b | %b", A, B, Y);
-A = 1; B = 0; #10;
-$display("%b %b | %b", A, B, Y);
-A = 1; B = 1; #10;
-$display("%b %b | %b", A, B, Y);
-$finish;
-end
-endmodule
+// Display the header for the waveform <br>
+output<br>
+$display("A B | Y");<br>
+$display("------");<br>
+// Apply test vectors<br>
+A = 0; B = 0; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 0; B = 1; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 1; B = 0; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+A = 1; B = 1; #10;<br>
+$display("%b %b | %b", A, B, Y);<br>
+$finish;<br>
+end<br>
+endmodule<br>
 
 _________________________________________________________________________________________________________________
 
@@ -336,90 +336,90 @@ output<br>
 $display("A B | Sum Carry");<br>
 $display("----|----------");<br>
 // Apply test vectors<br>
-A = 0; B = 0; #10;
-$display("%b %b | %b %b", A, B, Sum, 
-Carry);
-A = 0; B = 1; #10;
-$display("%b %b | %b %b", A, B, Sum, 
-Carry);
-A = 1; B = 0; #10;
-$display("%b %b | %b %b", A, B, Sum, 
-Carry);
-A = 1; B = 1; #10;
-$display("%b %b | %b %b", A, B, Sum, 
-Carry);
-$finish;
-end
+A = 0; B = 0; #10;<br>
+$display("%b %b | %b %b", A, B, Sum, <br>
+Carry);<br>
+A = 0; B = 1; #10;<br>
+$display("%b %b | %b %b", A, B, Sum, <br>
+Carry);<br>
+A = 1; B = 0; #10;<br>
+$display("%b %b | %b %b", A, B, Sum, <br>
+Carry);<br>
+A = 1; B = 1; #10;<br>
+$display("%b %b | %b %b", A, B, Sum, <br>
+Carry);<br>
+$finish;<br>
+end<br>
 endmodule
-
+<br>
 ______________________________________________________________________________________________
 
 // VERILOG CODE AND TESTBENCH FOR FULL ADDER //
 
 
 
-module myfulladder (
-input A,
-input B,
-input Cin,
-output Sum,
-output Cout
-);
-assign Sum = A ^ B ^ Cin;
-assign Cout = (A & B) | (Cin & (A ^ B));
-endmodule
+module myfulladder (<br>
+input A,<br>
+input B,<br>
+input Cin,<br>
+output Sum,<br>
+output Cout<br>
+);<br>
+assign Sum = A ^ B ^ Cin;<br>
+assign Cout = (A & B) | (Cin & (A ^ B));<br>
+endmodule<br>
 
 
 ///////// --- TESTBENCH  ---  //////////
 
 
-module test_myfulladder;
-reg A;
-reg B;
-reg Cin;
-wire Sum;
-wire Cout;
-// Instantiate the full adder
-myfulladder uut (
-.A(A),
-.B(B),
-.Cin(Cin),
-.Sum(Sum),
-.Cout(Cout)
-);
-initial begin
-// Display the header for the waveform 
-output
-$display("A B Cin | Sum Cout");
-$display("--------|----------");
-// Apply test vectors
-A = 0; B = 0; Cin = 0; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 0; B = 0; Cin = 1; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 0; B = 1; Cin = 0; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 0; B = 1; Cin = 1; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 1; B = 0; Cin = 0; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 1; B = 0; Cin = 1; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 1; B = 1; Cin = 0; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-A = 1; B = 1; Cin = 1; #10;
-$display("%b %b %b | %b %b", A, B, 
-Cin, Sum, Cout);
-$finish;
-end
-endmodule
+module test_myfulladder;<br>
+reg A;<br>
+reg B;<br>
+reg Cin;<br>
+wire Sum;<br>
+wire Cout;<br>
+// Instantiate the full adder<br>
+myfulladder uut (<br>
+.A(A),<br>
+.B(B),<br>
+.Cin(Cin),<br>
+.Sum(Sum),<br>
+.Cout(Cout)<br>
+);<br>
+initial begin<br>
+// Display the header for the waveform <br>
+output<br>
+$display("A B Cin | Sum Cout");<br>
+$display("--------|----------");<br>
+// Apply test vectors<br>
+A = 0; B = 0; Cin = 0; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 0; B = 0; Cin = 1; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 0; B = 1; Cin = 0; #10;<br>
+$display("%b %b %b | %b %b", A, B,<br> 
+Cin, Sum, Cout);<br>
+A = 0; B = 1; Cin = 1; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 1; B = 0; Cin = 0; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 1; B = 0; Cin = 1; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 1; B = 1; Cin = 0; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+A = 1; B = 1; Cin = 1; #10;<br>
+$display("%b %b %b | %b %b", A, B, <br>
+Cin, Sum, Cout);<br>
+$finish;<br>
+end<br>
+endmodule<br>
 
 ____________________________________________________________________________________________
 
