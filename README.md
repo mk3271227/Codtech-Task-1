@@ -78,18 +78,18 @@ ________________________________________________________________________________
 
 //VERILOG CODE AND TESTBENCH FOR NOT GATE//
 
-module mynotgate (
-    input A,
-    output Y
-);
-    assign Y = ~A;
-endmodule
-//////////////  TESTBENCH  /////////////////
-module test_mynotgate;
-    reg A;
-    wire Y;
+module mynotgate (<br>
+    input A,<br>
+    output Y<br>
+);<br>
+    assign Y = ~A;<br>
+endmodule<br>
+//////////////  TESTBENCH  /////////////////<br>
+module test_mynotgate;<br>
+    reg A;<br>
+    wire Y;<br>
 
-    // Instantiate the NOT gate
+    // Instantiate the NOT gate<
     mynotgate uut (
         .A(A),
         .Y(Y)
@@ -113,23 +113,23 @@ endmodule
 
 ___________________________________________________________________________________________________________________
 
-//VERILOG CODE AND TESTBENCH FOR NOR GATE//
+//VERILOG CODE AND TESTBENCH FOR NOR GATE//<br>
 
-module mynorgate (
-    input A,
-    input B,
-    output Y
-);
-    assign Y = ~(A | B);
-endmodule
+module mynorgate (<br>
+    input A,<br>
+    input B,<br>
+    output Y<br>
+);<br>
+    assign Y = ~(A | B);<br>
+endmodule<br>
 
 
-////////////   TESTBENCH   ////////////
+////////////   TESTBENCH   ////////////<br>
 
-module test_mynorgate;
-    reg A;
-    reg B;
-    wire Y;
+module test_mynorgate;<br>
+    reg A;<br>
+    reg B;<br>
+    wire Y;<br>
 
     // Instantiate the NOR gate
     mynorgate uut (
@@ -162,22 +162,22 @@ endmodule
 
 _______________________________________________________________________________________________________________
 
-//VERILOG CODE AND TESTBENCH FOR NAND GATE //
+//VERILOG CODE AND TESTBENCH FOR NAND GATE //<br>
 
-module mynandgate (
-    input A,
-    input B,
-    output Y
-);
-    assign Y = ~(A & B);
-endmodule
+module mynandgate (<br>
+    input A,<br>
+    input B,<br>
+    output Y<br>
+);<br>
+    assign Y = ~(A & B);<br>
+endmodule<br>
 
-///////////TESTBENCH/////////////
+///////////TESTBENCH/////////////<br>
 
-module test_mynandgate;
-    reg A;
-    reg B;
-    wire Y;
+module test_mynandgate;<br>
+    reg A;<br>
+    reg B;<br>
+    wire Y;<br>
 
     // Instantiate the NAND gate
     mynandgate uut (
@@ -210,30 +210,30 @@ endmodule
 
 ______________________________________________________________________________________________
 
-// VERILOG CODE AND TESTBENCH FOR XOR GATE //
+// VERILOG CODE AND TESTBENCH FOR XOR GATE //<br>
 
-module myxorgate (
-input A,
-input B,
-output Y
-);
-assign Y = A ^ B;
-endmodule
+module myxorgate (<br>
+input A,<br>
+input B,<br>
+output Y<br>
+);<br>
+assign Y = A ^ B;<br>
+endmodule<br>
 
-////////////TESTBENCH//////////////
+////////////TESTBENCH//////////////<br>
 
 
-module test_myxorgate;
-reg A;
-reg B;
-wire Y;
-// Instantiate the XOR gate
-myxorgate uut (
-.A(A),
-.B(B),
-.Y(Y)
-);
-initial begin
+module test_myxorgate;<br>
+reg A;<br>
+reg B;<br>
+wire Y;<br>
+// Instantiate the XOR gate<br>
+myxorgate uut (<br>
+.A(A),<br>
+.B(B),<br>
+.Y(Y)<br>
+);<br>
+initial begin<br>
 // Display the header for the waveform 
 output
 $display("A B | Y");
@@ -253,22 +253,22 @@ endmodule
 
 _________________________________________________________________________________________________________________
 
-// VERILOG CODE AND TESTBENCH FOR XNOR GATE //
+// VERILOG CODE AND TESTBENCH FOR XNOR GATE //<br>
 
-module myxnorgate (
-    input A,
-    input B,
-    output Y
-);
-    assign Y = ~(A ^ B);
+module myxnorgate (<br>
+    input A,<br>
+    input B,<br>
+    output Y<br>
+);<br>
+    assign Y = ~(A ^ B);<br>
 endmodule
+<br>
+//////////TESTBENCH////////////<br>
 
-//////////TESTBENCH////////////
-
-module test_myxnorgate;
-    reg A;
-    reg B;
-    wire Y;
+module test_myxnorgate;<br>
+    reg A;<br>
+    reg B;<br>
+    wire Y;<br>
 
     // Instantiate the XNOR gate
     myxnorgate uut (
@@ -301,41 +301,41 @@ endmodule
 
 _____________________________________________________________________________________________________
 
-// VERILOG CODE AND TESTBENCH FOR HALF ADDER //
+// VERILOG CODE AND TESTBENCH FOR HALF ADDER //<br>
 
 
-module myhalfadder (
-input A,
-input B,
-output Sum,
-output Carry
-);
-assign Sum = A ^ B;
-assign Carry = A & B;
+module myhalfadder (<br>
+input A,<br>
+input B,<br>
+output Sum,<br>
+output Carry<br>
+);<br>
+assign Sum = A ^ B;<br>
+assign Carry = A & B;<br>
 endmodule
+<br>
+
+/////////TESTBENCH///////////<br>
 
 
-/////////TESTBENCH///////////
-
-
-module test_myhalfadder;
-reg A;
-reg B;
-wire Sum;
-wire Carry;
-// Instantiate the half adder
-myhalfadder uut (
-.A(A),
-.B(B),
-.Sum(Sum),
-.Carry(Carry)
-);
-initial begin
-// Display the header for the waveform 
-output
-$display("A B | Sum Carry");
-$display("----|----------");
-// Apply test vectors
+module test_myhalfadder;<br>
+reg A;<br>
+reg B;<br>
+wire Sum;<br>
+wire Carry;<br>
+// Instantiate the half adder<br>
+myhalfadder uut (<br>
+.A(A),<br>
+.B(B),<br>
+.Sum(Sum),<br>
+.Carry(Carry)<br>
+);<br>
+initial begin<br>
+// Display the header for the waveform <br>
+output<br>
+$display("A B | Sum Carry");<br>
+$display("----|----------");<br>
+// Apply test vectors<br>
 A = 0; B = 0; #10;
 $display("%b %b | %b %b", A, B, Sum, 
 Carry);
@@ -423,26 +423,26 @@ endmodule
 
 ____________________________________________________________________________________________
 
-// VERILOG CODE AND TESTBENCH FOR 2 TO 1 MULTIPLEXER //
+// VERILOG CODE AND TESTBENCH FOR 2 TO 1 MULTIPLEXER //<br>
 
 
 
-module my2to1mux (
-    input A,
-    input B,
-    input Sel,
-    output Y
-);
-    assign Y = (Sel) ? B : A;
-endmodule
+module my2to1mux (<br>
+    input A,<br>
+    input B,<br>
+    input Sel,<br>
+    output Y<br>
+);<br>
+    assign Y = (Sel) ? B : A;<br>
+endmodule<br>
 
-//////////////////  TESTBENCH  ///////////////////////
+//////////////////  TESTBENCH  ///////////////////////<br>
 
-module test_my2to1mux;
-    reg A;
-    reg B;
-    reg Sel;
-    wire Y;
+module test_my2to1mux;<br>
+    reg A;<br>
+    reg B;<br>
+    reg Sel;<br>
+    wire Y;<br>
 
     // Instantiate the 2-to-1 multiplexer
     my2to1mux uut (
